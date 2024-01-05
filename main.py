@@ -30,4 +30,9 @@
 #
 # print(f"{meters} метрів дорівнює {result:.2f} {unit}.")
 
+print("Hello World")
+print("Hello")
 
+print("Changes from master")
+print("Changes from master 2")
+print("Hello World from develop!")
