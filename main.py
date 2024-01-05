@@ -33,6 +33,6 @@
 print("Hello World")
 print("Hello")
 
-print("Changes from master")
+
 print("Changes from master 2")
-print("Hello World from develop!")
+print ("Goodbye World!")
