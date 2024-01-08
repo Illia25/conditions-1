@@ -1,38 +1,75 @@
-# завдвння 2
-
-# Введення кількості метрів від користувача
-# meters = float(input("Введіть кількість метрів: "))
-
-# Вибір операції від користувача
-# print("Оберіть одиниці вимірювання:")
-# print("1. Метри")
-# print("2. Милі")
-# print("3. Дюйми")
-# print("4. Ярди")
-# choice = int(input("Ваш вибір (введіть число від 1 до 4): "))
-
-# Виконання вибраної операції
-# if choice == 1:
-#     result = meters
-#     unit = "метрів"
-# elif choice == 2:
-#     result = meters * 0.000621371  # 1 метр = 0.000621371 милі
-#     unit = "милі"
-# elif choice == 3:
-#     result = meters * 39.3701  # 1 метр = 39.3701 дюймів
-#     unit = "дюймів"
-# elif choice == 4:
-#     result = meters * 1.09361  # 1 метр = 1.09361 ярдів
-#     unit = "ярдів"
-# else:
-#     print("Введено невірний вибір одиниць вимірювання. Будь ласка, виберіть число від 1 до 4.")
-#     exit()
+# Завдання 1
+# def get_day_name(day_number):
+#     days = {
+#         1: "понеділок",
+#         2: "вівторок",
+#         3: "середа",
+#         4: "четвер",
+#         5: "п'ятниця",
+#         6: "субота",
+#         7: "неділя"
+#     }
 #
-# print(f"{meters} метрів дорівнює {result:.2f} {unit}.")
+#     try:
+#         day_number = int(day_number)
+#         return days[day_number]
+#     except (ValueError, KeyError):
+#         raise ValueError("Некоректний номер дня тижня")
+#
+# # Зчитування введеного номера дня тижня від користувача
+# user_input = input("Введіть номер дня тижня (1-7): ")
+#
+# # Виведення результату
+# try:
+#     result = get_day_name(user_input)
+#     print(result)
+# except ValueError as e:
+#     print(f"Помилка: {e}")
 
-print("Hello World")
-print("Hello")
+
+#завдвння 2
+# try:
+#     num1 = int(input("Enter first number: "))
+#     num2 = int(input("Enter second number: "))
+#     if num1 == num2:
+#         print("OK!Числа рівні")
+#     else:
+#         print(f"Числа не рівні. У порядку зростання: {min(num1, num2)}, {max(num1, num2)}")
+# except ValueError as e:
+#     print(f"Error: {e}")
+
+#завдання 3
+# def perform_operation(number1, number2, operator):
+#     try:
+#         number1 = float(number1)
+#         number2 = float(number2)
+#
+#         if operator == '+':
+#             result = number1 + number2
+#         elif operator == '-':
+#             result = number1 - number2
+#         elif operator == '*':
+#             result = number1 * number2
+#         elif operator == '/':
+#             # Обробка ділення на нуль
+#             if number2 == 0:
+#                 raise ValueError("Ділення на нуль неможливе.")
+#             result = number1 / number2
+#         else:
+#             raise ValueError("Введено невірну математичну дію.")
+#
+#         return f"Результат: {result}"
+#     except ValueError as e:
+#         return f"Помилка: {e}"
+#
+# # Зчитування введених користувачем чисел та математичної дії
+# user_input1 = input("Введіть перше число: ")
+# user_input2 = input("Введіть друге число: ")
+# user_operator = input("Введіть математичну дію (+, -, *, /): ")
+#
+# # Виведення результату
+# result = perform_operation(user_input1, user_input2, user_operator)
+# print(result)
 
 
-print("Changes from master 2")
-print ("Goodbye World!")
+
